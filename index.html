@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>डॉ. निवेश पटेल क्लिनिक | पार्थ दवाखाना, रिप्टा (जेवरा), खिन्हा रोड</title>
+<meta name="description" content="डॉ. निवेश पटेल (BHMS, DNHE), पार्थ दवाखाना, रिप्टा (जेवरा), खिन्हा रोड। एलोपैथिक, होम्योपैथिक, आयुर्वेदिक सहित सभी पद्धतियों से इलाज। समय सुबह 10:00 से शाम 6:00 बजे तक।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Tiro+Devanagari+Hindi&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f2f7f4;
+  --surface: #ffffff;
+  --fg: #12261f;
+  --muted: #4d625a;
+  --line: #d3e1da;
+  --primary: #1f5c4a;
+  --primary-ink: #ffffff;
+  --accent: #c97a00;
+  --tint: #e2efe9;
+  --font-display: "Tiro Devanagari Hindi", "Noto Serif Devanagari", Georgia, serif;
+  --font-body: "Hind", "Noto Sans Devanagari", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1c17; --surface: #162a23; --fg: #e6f1ec; --muted: #9db6ab;
+    --line: #28443a; --primary: #6fc3a5; --primary-ink: #0c1a15; --accent: #f0b04a; --tint: #1b3329;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 6rem;
+}
+.wrap { max-width: 1040px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.25; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+a { color: var(--primary); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.topbar { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; align-items: center; padding-block: 1rem; border-bottom: 1px solid var(--line); }
+.brand { font-family: var(--font-display); font-size: 1.2rem; }
+.topbar nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; font-size: .95rem; }
+.topbar nav a { text-decoration: none; color: var(--muted); }
+.topbar nav a:hover { color: var(--primary); }
+
+.hero { padding-block: 3rem 2.5rem; display: grid; gap: 1.25rem; }
+.tag { display: inline-block; width: fit-content; font-size: .85rem; letter-spacing: .04em; color: var(--primary); background: var(--tint); padding: .25rem .75rem; border-radius: 999px; font-weight: 500; }
+.hero h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); }
+.hero p.lead { max-width: 38rem; color: var(--muted); font-size: 1.1rem; }
+.degree { font-weight: 600; letter-spacing: .08em; color: var(--accent); }
+.where { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+.btn { display: inline-block; padding: .7rem 1.25rem; border-radius: 6px; background: var(--primary); color: var(--primary-ink); text-decoration: none; font-weight: 600; }
+.btn.ghost { background: transparent; color: var(--primary); border: 1.5px solid var(--primary); }
+.addr { color: var(--fg); font-weight: 500; }
+.btn.call { background: var(--accent); color: #12261f; }
+.callbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; display: flex; justify-content: center; padding: .6rem max(16px, env(safe-area-inset-right, 0px)) calc(.6rem + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: var(--bg); border-top: 1px solid var(--line); }
+.callbar a { width: 100%; max-width: 420px; text-align: center; padding: .85rem 1rem; border-radius: 8px; background: var(--accent); color: #12261f; font-weight: 600; font-size: 1.05rem; text-decoration: none; }
+
+section { padding-block: 2.5rem; border-top: 1px solid var(--line); }
+.sec-head { display: grid; gap: .5rem; margin-bottom: 1.5rem; }
+.sec-head h2 { font-size: clamp(1.6rem, 4.5vw, 2.1rem); }
+.sec-head p { color: var(--muted); max-width: 40rem; }
+
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 1.25rem; display: grid; gap: .6rem; align-content: start; min-width: 0; }
+.card h3 { font-size: 1.3rem; }
+.card .en { font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.card p { color: var(--muted); font-size: .98rem; }
+.card ul { margin: 0; padding-left: 1.1rem; font-size: .96rem; }
+.card li { margin-bottom: .15rem; }
+
+.conds { display: flex; flex-wrap: wrap; gap: .5rem; }
+.conds span { background: var(--surface); border: 1px solid var(--line); padding: .35rem .85rem; border-radius: 999px; font-size: .95rem; }
+
+.visit { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.visit dl { margin: 0; display: grid; gap: 1rem; }
+.visit dt { font-size: .85rem; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.visit dd { margin: 0; font-size: 1.1rem; }
+.note { background: var(--tint); border-radius: 8px; padding: 1.25rem; font-size: .98rem; color: var(--fg); }
+
+footer { padding-block: 1.5rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; display: grid; gap: .4rem; }
+@media (prefers-reduced-motion: no-preference) { .btn { transition: opacity .15s; } .btn:hover { opacity: .88; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "डॉ. निवेश पटेल",
+  "medicalSpecialty": "Homeopathy",
+  "telephone": "+918319268190",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "पार्थ दवाखाना, रिप्टा (जेवरा), खिन्हा रोड",
+    "addressCountry": "IN"
+  },
+  "openingHours": "Mo-Su 10:00-18:00"
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <div class="brand">डॉ. निवेश पटेल</div>
+    <nav aria-label="मुख्य मेनू">
+      <a href="#ilaaj">इलाज</a>
+      <a href="#rog">बीमारियाँ</a>
+      <a href="#pata">क्लिनिक का पता</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <span class="tag">सभी पद्धतियों से इलाज</span>
+      <h1>डॉ. निवेश पटेल<br>एक ही क्लिनिक में हर बीमारी का इलाज</h1>
+      <p class="degree">BHMS, DNHE</p>
+      <p class="lead">एलोपैथिक, होम्योपैथिक और आयुर्वेदिक सहित कई चिकित्सा पद्धतियाँ। मरीज़ की बीमारी और ज़रूरत देखकर सही इलाज चुना जाता है।</p>
+      <div class="where">
+        <a class="btn call" href="tel:+918319268190">अपॉइंटमेंट के लिए कॉल करें</a>
+        <a class="btn ghost" href="#pata">क्लिनिक का पता देखें</a>
+        <span class="addr">पार्थ दवाखाना, रिप्टा (जेवरा), खिन्हा रोड</span>
+      </div>
+    </div>
+
+    <section id="ilaaj">
+      <div class="sec-head">
+        <h2>हमारी इलाज की पद्धतियाँ</h2>
+        <p>हर मरीज़ अलग होता है। कुछ बीमारियों में दवा तुरंत चाहिए होती है, कुछ में धीमा और जड़ से इलाज बेहतर रहता है।</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="en">Allopathic</span>
+          <h3>एलोपैथिक इलाज</h3>
+          <p>बुखार, संक्रमण, दर्द, ब्लड प्रेशर, शुगर और आपातकालीन स्थितियों में तेज़ असर वाला इलाज।</p>
+          <ul><li>जाँच और निदान</li><li>दवाइयाँ और इंजेक्शन</li><li>नियमित फॉलो-अप</li></ul>
+        </article>
+        <article class="card">
+          <span class="en">Homeopathic</span>
+          <h3>होम्योपैथिक इलाज</h3>
+          <p>पुरानी बीमारियों, एलर्जी, त्वचा और बच्चों की समस्याओं में हल्की और सुरक्षित दवाइयाँ।</p>
+          <ul><li>मरीज़ के लक्षणों के अनुसार दवा</li><li>बच्चों और बुज़ुर्गों के लिए उपयुक्त</li></ul>
+        </article>
+        <article class="card">
+          <span class="en">Ayurvedic</span>
+          <h3>आयुर्वेदिक इलाज</h3>
+          <p>पाचन, जोड़ों के दर्द, कमज़ोरी और जीवनशैली से जुड़ी समस्याओं में जड़ी-बूटी आधारित इलाज।</p>
+          <ul><li>खान-पान की सलाह</li><li>हर्बल औषधियाँ</li></ul>
+        </article>
+        <article class="card">
+          <span class="en">Acupressure &amp; Physiotherapy</span>
+          <h3>एक्यूप्रेशर और फिज़ियोथेरेपी</h3>
+          <p>कमर, गर्दन, घुटनों और मांसपेशियों के दर्द में बिना दवा के राहत देने वाली पद्धति।</p>
+          <ul><li>दर्द प्रबंधन</li><li>चोट के बाद सुधार</li></ul>
+        </article>
+        <article class="card">
+          <span class="en">Naturopathy</span>
+          <h3>प्राकृतिक चिकित्सा</h3>
+          <p>आहार, योग और दिनचर्या में बदलाव से शरीर को खुद ठीक होने में मदद।</p>
+          <ul><li>डाइट सलाह</li><li>वज़न और शुगर नियंत्रण</li></ul>
+        </article>
+        <article class="card">
+          <span class="en">General Care</span>
+          <h3>सामान्य स्वास्थ्य जाँच</h3>
+          <p>परिवार के सभी सदस्यों के लिए सामान्य परामर्श, जाँच और स्वास्थ्य की सलाह।</p>
+          <ul><li>बच्चों से बुज़ुर्गों तक</li><li>मौसमी बीमारियाँ</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="rog">
+      <div class="sec-head">
+        <h2>इन बीमारियों में दिखाएँ</h2>
+        <p>नीचे की सूची में से कोई भी तकलीफ़ हो तो क्लिनिक आकर सलाह लें।</p>
+      </div>
+      <div class="conds">
+        <span>बुखार और सर्दी-खाँसी</span><span>पेट और पाचन की समस्या</span><span>ब्लड प्रेशर</span><span>शुगर</span>
+        <span>जोड़ों और कमर का दर्द</span><span>साइटिका</span><span>त्वचा रोग और एलर्जी</span><span>सिरदर्द और माइग्रेन</span><span>बच्चों की बीमारियाँ</span>
+        <span>कमज़ोरी और थकान</span><span>महिलाओं की सामान्य समस्याएँ</span><span>पुरानी बीमारियाँ</span>
+      </div>
+    </section>
+
+    <section id="pata">
+      <div class="sec-head">
+        <h2>क्लिनिक का पता</h2>
+      </div>
+      <div class="visit">
+        <dl>
+          <div><dt>डॉक्टर</dt><dd>डॉ. निवेश पटेल और डॉ. प्रीति पटेल</dd></div>
+          <div><dt>पता</dt><dd>पार्थ दवाखाना, रिप्टा (जेवरा), खिन्हा रोड</dd></div>
+          <div><dt>योग्यता</dt><dd>BHMS, DNHE</dd></div>
+          <div><dt>क्लिनिक का समय</dt><dd>सुबह 10:00 बजे से शाम 6:00 बजे तक</dd></div>
+          <div><dt>फ़ोन</dt><dd><a href="tel:+918319268190">8319268190</a></dd></div>
+          <div><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Parth+Dawakhana+Ripta+Jeora+Khinha+Road" target="_blank" rel="noopener">गूगल मैप पर खोजें</a></div>
+        </dl>
+        <div class="note">आपातकालीन स्थिति में, जैसे तेज़ सीने का दर्द, साँस लेने में दिक्कत या बेहोशी, क्लिनिक का इंतज़ार न करें। तुरंत नज़दीकी अस्पताल जाएँ या 108 पर कॉल करें।</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© डॉ. निवेश पटेल और डॉ. प्रीति पटेल, पार्थ दवाखाना, रिप्टा (जेवरा), खिन्हा रोड</div>
+    <div>इस वेबसाइट की जानकारी सामान्य है। इलाज डॉक्टर की जाँच के बाद ही तय होता है।</div>
+  </footer>
+</div>
+<div class="callbar"><a href="tel:+918319268190">📞 अपॉइंटमेंट के लिए कॉल करें</a></div>
+</body>
+</html>
